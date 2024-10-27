@@ -1,8 +1,8 @@
-import React from "react";
-import styles from "./home.module.css";
 import Link from "next/link";
+import styles from "./contact.module.css";
+import React from "react";
 
-function Navbar() {
+const Contact = () => {
   return (
     <div className={styles.container}>
       <nav className="bg-yellow-400 h-12">
@@ -44,22 +44,34 @@ function Navbar() {
           </ul>
         </div>
       </nav>
-      <div className={styles.homeSection}>
-        <p>
-          <b>
-            "Ignite Your Ideas with InnoTech Hub – Where Innovation Meets
-            Technology!
-            <br></br>
-            Let’s Bring Your Vision to Life!”
-          </b>
+      <div>
+        <h3 className={styles.h3}>Get in Touch</h3>
+        <p className={styles.paragraph}>
+          "We’re here to help you turn your ideas into reality. Reach out to us
+          for inquiries, project discussions, or support. Whether you have a
+          question or need a custom tech solution, we’re just a message away!"
         </p>
+
+        <h3 className={styles.h3}>Contact Information:</h3>
+        <ul className={styles.li}>
+          <li>
+            <h6 className={styles.h6}>Address:</h6>202 Innovation Lane, Tech
+            City, ST
+          </li>
+          <li>
+            <h6 className={styles.h6}>Phone:</h6>(123) 456-7890
+          </li>
+          <li>
+            <h6 className={styles.h6}>Email:</h6>innotechhub@gmail.com
+          </li>
+        </ul>
       </div>
+      <p className={styles.p}>Click Here To Contact Form:</p>
+      <Link href="/contact/contactUs" className={styles.contactButton}>
+        Contact Us
+      </Link>
     </div>
   );
-}
+};
 
-export default Navbar;
-
-// a tag or href ="/" and page name is for link the pages About
-// open in next page for set the target _blank
-// open in same page
+export default Contact;

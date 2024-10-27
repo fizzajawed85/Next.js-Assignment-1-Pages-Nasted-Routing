@@ -1,8 +1,8 @@
-import React from "react";
-import styles from "./home.module.css";
 import Link from "next/link";
+import styles from "./services.module.css";
+import React from "react";
 
-function Navbar() {
+const Services = () => {
   return (
     <div className={styles.container}>
       <nav className="bg-yellow-400 h-12">
@@ -44,22 +44,30 @@ function Navbar() {
           </ul>
         </div>
       </nav>
-      <div className={styles.homeSection}>
-        <p>
-          <b>
-            "Ignite Your Ideas with InnoTech Hub – Where Innovation Meets
-            Technology!
-            <br></br>
-            Let’s Bring Your Vision to Life!”
-          </b>
-        </p>
-      </div>
+      <h3 className={styles.h3}>List of Services:</h3>
+      <ul className={styles.li}>
+        <li>
+          <h4 className={styles.h4}>Custom Software Development:</h4> Tailored
+          solutions to fit your business requirements.
+        </li>
+        <li>
+          <h4 className={styles.h4}>Web Development:</h4>Creating engaging and
+          responsive websites.
+        </li>
+        <li>
+          <h4 className={styles.h4}>IT Consulting:</h4>Strategic advice to
+          enhance your IT infrastructure.
+        </li>
+        <li>
+          <h4 className={styles.h4}>Technical Support:</h4>Reliable support to
+          keep your systems running smoothly.
+        </li>
+      </ul>
+
+      <h3 className={styles.h3}>Call to Action:</h3>
+      <p className={styles.p}>“Discover How We Can Help!”</p>
     </div>
   );
-}
+};
 
-export default Navbar;
-
-// a tag or href ="/" and page name is for link the pages About
-// open in next page for set the target _blank
-// open in same page
+export default Services;

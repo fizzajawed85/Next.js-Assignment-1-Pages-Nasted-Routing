@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./home.module.css";
 import Link from "next/link";
+import styles from "./about.module.css";
 
-function Navbar() {
+const About = () => {
   return (
     <div className={styles.container}>
       <nav className="bg-yellow-400 h-12">
@@ -44,22 +44,24 @@ function Navbar() {
           </ul>
         </div>
       </nav>
-      <div className={styles.homeSection}>
+
+      <div className={styles.paragraph}>
+        <h4 className={styles.h4}>Short Description:</h4>
         <p>
-          <b>
-            "Ignite Your Ideas with InnoTech Hub – Where Innovation Meets
-            Technology!
-            <br></br>
-            Let’s Bring Your Vision to Life!”
-          </b>
+          "At InnoTech Hub, we’re passionate about transforming concepts into
+          reality through innovative technology solutions. Our experienced team
+          works hand-in-hand with you to navigate the complexities of the
+          digital world."
+        </p>
+        <br></br>
+        <h3 className={styles.h3}>Our Mission :</h3>
+        <p>
+          "We strive to empower businesses by harnessing technology to drive
+          growth and efficiency."
         </p>
       </div>
     </div>
   );
-}
+};
 
-export default Navbar;
-
-// a tag or href ="/" and page name is for link the pages About
-// open in next page for set the target _blank
-// open in same page
+export default About;

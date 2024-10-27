@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./home.module.css";
 import Link from "next/link";
+import styles from "./contactUs.module.css";
 
-function Navbar() {
+const ContactUs = () => {
   return (
     <div className={styles.container}>
       <nav className="bg-yellow-400 h-12">
@@ -44,22 +44,16 @@ function Navbar() {
           </ul>
         </div>
       </nav>
-      <div className={styles.homeSection}>
-        <p>
-          <b>
-            "Ignite Your Ideas with InnoTech Hub – Where Innovation Meets
-            Technology!
-            <br></br>
-            Let’s Bring Your Vision to Life!”
-          </b>
+      <div>
+        <h3 className={styles.h3}>We're Almost Ready!</h3>
+        <p className={styles.paragraph}>
+          Our contact form is coming soon. Whether you have questions, feedback,
+          or need assistance, we'll be here to help you connect with us quickly
+          and easily. Stay tuned for updates and thank you for your patience!
         </p>
       </div>
     </div>
   );
-}
+};
 
-export default Navbar;
-
-// a tag or href ="/" and page name is for link the pages About
-// open in next page for set the target _blank
-// open in same page
+export default ContactUs;
