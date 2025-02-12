@@ -15,29 +15,17 @@ const ContactUs = () => {
               </Link>
             </li>
             <li>
-              <Link
-                className="hover:text-sky-400"
-                href="/about"
-                target="_blank"
-              >
+              <Link className="hover:text-sky-400" href="/about" target="_blank">
                 About
               </Link>
             </li>
             <li>
-              <Link
-                className="hover:text-purple-400"
-                href="/services"
-                target="_blank"
-              >
+              <Link className="hover:text-purple-400" href="/services" target="_blank">
                 Services
               </Link>
             </li>
             <li>
-              <Link
-                className="hover:text-green-400"
-                href="/contact"
-                target="_blank"
-              >
+              <Link className="hover:text-green-400" href="/contact" target="_blank">
                 Contact
               </Link>
             </li>
@@ -45,11 +33,9 @@ const ContactUs = () => {
         </div>
       </nav>
       <div>
-        <h3 className={styles.h3}>We're Almost Ready!</h3>
+        <h3 className={styles.h3}>{"We're Almost Ready!"}</h3>
         <p className={styles.paragraph}>
-          Our contact form is coming soon. Whether you have questions, feedback,
-          or need assistance, we'll be here to help you connect with us quickly
-          and easily. Stay tuned for updates and thank you for your patience!
+          {"Our contact form is coming soon. Whether you have questions, feedback, or need assistance, we'll be here to help you connect with us quickly and easily. Stay tuned for updates and thank you for your patience!"}
         </p>
       </div>
     </div>

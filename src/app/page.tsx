@@ -15,29 +15,17 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link
-                className="hover:text-sky-400"
-                href="/about"
-                target="_blank"
-              >
+              <Link className="hover:text-sky-400" href="/about" target="_blank">
                 About
               </Link>
             </li>
             <li>
-              <Link
-                className="hover:text-purple-400"
-                href="/services"
-                target="_blank"
-              >
+              <Link className="hover:text-purple-400" href="/services" target="_blank">
                 Services
               </Link>
             </li>
             <li>
-              <Link
-                className="hover:text-green-400"
-                href="/contact"
-                target="_blank"
-              >
+              <Link className="hover:text-green-400" href="/contact" target="_blank">
                 Contact
               </Link>
             </li>
@@ -47,10 +35,9 @@ function Navbar() {
       <div className={styles.homeSection}>
         <p>
           <b>
-            "Ignite Your Ideas with InnoTech Hub – Where Innovation Meets
-            Technology!
-            <br></br>
-            Let’s Bring Your Vision to Life!”
+            {"Ignite Your Ideas with InnoTech Hub – Where Innovation Meets Technology!"}
+            <br />
+            {"Let’s Bring Your Vision to Life!"}
           </b>
         </p>
       </div>
@@ -60,6 +47,9 @@ function Navbar() {
 
 export default Navbar;
 
-// a tag or href ="/" and page name is for link the pages About
-// open in next page for set the target _blank
-// open in same page
+/* 
+- The `<Link>` component is used for client-side navigation.
+- `href="/"` links to different pages.
+- `target="_blank"` ensures the link opens in a new tab.
+- Links without `target="_blank"` open in the same tab.
+*/
